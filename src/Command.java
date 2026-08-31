@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public interface Command {
-    void execute();
+    void execute(ArrayList<String> arrayList) throws CommandNotCorrectException;
 }
