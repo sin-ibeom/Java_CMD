@@ -1,2 +1,2 @@
-# Java_CMD
-Java 기반 Cmd
+# Java
+Java 기반 linux command panel
