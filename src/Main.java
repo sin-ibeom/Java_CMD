@@ -14,10 +14,12 @@ public class Main{
         String str = File.listRoots()[0].toString();
         System.out.println(str);
 
-        while(!(sc.equals("exit"))){
+        while(true) {
             ConsoleView.run();
             Manager mg = new Manager();
-            mg.run(sc.nextLine());
+            String input = sc.nextLine();
+            if(input.equals("exit")) break;
+            mg.run(input);
         }
 
 

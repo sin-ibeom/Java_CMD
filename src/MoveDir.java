@@ -13,6 +13,7 @@ public class MoveDir implements Command{
 
                 switch (moveDir){
                     case "..":
+                        if(Manager.getDir().equals("C:\\")) break;
                         File temp = new File(Manager.getDir());
                         System.out.println(temp.getParent());
                         Manager.setDir(temp.getParent().toString());
