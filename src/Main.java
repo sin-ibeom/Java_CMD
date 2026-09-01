@@ -21,10 +21,6 @@ public class Main{
             if(input.equals("exit")) break;
             mg.run(input);
         }
-
-
-
-
         sc.close();
     }
 }

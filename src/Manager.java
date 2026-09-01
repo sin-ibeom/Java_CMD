@@ -17,7 +17,9 @@ public class Manager {
 //        while(true){
         String input = str.split(" ")[0];
         commands.put("ls", new FileList());
+        commands.put("pwd", new pwdCommand());
         commands.put("cd", new MoveDir());
+        commands.put("mkdir", new makeDirCommand());
 
         if(commands.containsKey(input)){
             CommandParser cp = new CommandParser();
@@ -39,12 +41,6 @@ public class Manager {
 
     public static void setDir(String input){
         String temp = dir;
-
-//        if(dir){
-//
-//        }
-
-
         dir = input;
     }
 
